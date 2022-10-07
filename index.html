@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form_area">
+            <h2 class="title">Registration</h2>
+            <form action="">
+                <div class="form_group">
+                    <label for="email" class="sub_title">Email</label> 
+                    <input type="email" id="email" class="form_style"> </div>
+                <div class="form_group">
+                    <label for="password" class="sub_title">Password</label>
+                    <input type="password" id="password" class="form_style" pattern="(?=.*\d)(?=[a-z])(?=.*[A-Z]).{8,}" title="must contain at least one number and one uppercase and lowercase letter,and at least 8 or more character">
+                </div>
+                 <button class="btn">Register</button>
+                </div>
+            
+        
+            </form>
+        </div>
+        
+       <div id="message">
+           <h3>Password must contain the following:</h3>
+           <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+           <p id="uppercase" class="invalid">A <b>uppercase</b> letter</p>
+           <p id="number" class="invalid">A <b>number</b></p>
+           <p id="lenght" class="invalid">Minimum 8 character</p>
+       </div> 
+    </div>
+
+   <script src="App.js"></script> 
+</body>
+</html>
